@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Sistema Integrado de Gestion</h1>
+        <figure>
+            <img src="imagenes/usuario.jpg" alt="Usuario">
+            <figcaption>Usuario 1</figcaption>
+        </figure>
+    </header>
+    <nav>   
+        <label class="busqueda">
+            <label for="texto_buscar">Buscar en la Web </label>
+            <input type="search" id="texto_buscar">
+            <button id="buscar">
+                <img src="imagenes/lupa.jpg" id="imagen_buscar">
+                <label for="text">Buscar</label>
+            </button>
+        </label>
+    </nav>
+         <aside>
+            <h2>Menú</h2>
+            <button id="agregar_producto">
+                <label for="text">Agregar Producto</label>
+                <img src="imagenes/Agregar.jpg" id="imagen_agregar">
+            </button><br>
+
+            <button id="agregar_producto">
+                <label for="text">Administrar Categorias</label>
+                <img src="imagenes/Lapiz.jpg" id="imagen_categorias">
+            </button><br>
+
+            <button id="agregar_producto">
+                <label for="text">Existencia</label>
+                <img src="imagenes/Base de Datos.jpg" id="imagen_existencias">
+            </button><br>
+
+            <button id="agregar_producto">
+                <label for="text">Administrar Pagos</label>
+                <img src="imagenes/Tarjeta.jpg" id="imagen_tarjeta">
+            </button>
+        </aside>
+    <main>
+        <section>
+            <form method="POST">
+                <fieldset>
+                    <legend>Agregar Producto</legend>
+                    
+                    <label for="Codigo" class="label">Codigo*</label>
+                        <input type="text" name="Codigo" id="Codigo" class="input" maxlength="6" pattern="[0-7]{6}" title="Debe ingrsar solo 6 números" required>
+                        <input type="button" value="Validar" >
+                    <br><br>
+
+                    <label for="Nombre" class="label">Nombre*</label>
+                        <input type="text" name="Nombre" id="Nombre" placeholder="Solo letras y numeros" class="input" maxlength="100">  
+                    <br><br>
+
+                    <label for="Abreviatura" class="label">Abreviatura*</label>
+                        <input type="text" name="Abreviatura" id="Abreviatura" placeholder="Solo letras" maxlength="10" class="input" pattern="[a-zA-Z\s]{2,50}" title="Solo letras" required>
+                    <br><br>
+
+                    <label for="Categoria" class="label">Categoria*</label>
+                        <input list="Categoria" class="input">
+                        <datalist id="Categoria">
+                            <option value="Panes especiales"></option>
+                            <option value="lácteos"></option>
+                            <option value="pasteles"></option>
+                            <option value="lista cerrada de elementos"></option>
+                        </datalist>
+                    <br><br>
+                    
+                    <label for="RUC Proveedor" class="label">RUC Proveedor*</label>
+                        <input type="text" name="RUC Proveedor" id="RUC Proveedor" placeholder="Solo numeros" class="input">
+                    <br><br>
+                    
+                    <label for="Precio" class="label">Precio*</label>
+                        <input type="number" name="Precio" id="Precio" class="input" min="10">
+                    <br><br>
+                    
+                    <label for="Color_etiqueta" class="label">Color de etiqueta</label>
+                        <input type="color" name="Color_etiqueta" id="Color_etiqueta" class="input">
+                    <br><br>
+                    
+                    <label for="Fecha" class="label">Fecha*</label>
+                        <input type="date" name="Fecha" id="Fecha" class="input">
+                    <br><br>
+                    
+                    <label for="Estado" class="label">Estado*</label>
+                        <input type="text" name="" id="" class="input">
+                    <br><br>
+                    
+                    <label for="Afecto_impuesto" class="label">Afecto a impuesto*</label>
+                        <input type="checkbox" name="Afecto_impuesto" id="Afecto_impuesto" class="input">
+                    <br>
+                    <br>
+                    <br>
+                    <label for="Foto" class="label">Foto</label>
+                        <input type="file" name="Foto" id="Foto" class="foto" size="5 Mb" accept="image/png, image/jpg">
+                    <br><br>
+                    
+                    <label for="Descripcion" class="label">Descripcion*</label>
+                        <textarea id="Descripcion" cols="30" rows="10"></textarea>
+                    <br>
+                    <br>
+                    
+                    <p class="button">
+                    <input type="submit" value="Grabar">
+                    <input type="reset" value="Limpiar">
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <a href="#">¿Qué hacemos?</a>
+        <a href="#">Enlaces principales</a>
+        <a href="#">Contáctanos</a>
+    </footer>
+</body>
+</html>
