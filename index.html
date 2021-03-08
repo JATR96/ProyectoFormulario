@@ -11,7 +11,7 @@
     <header>
         <h1>Sistema Integrado de Gestion</h1>
         <figure>
-            <img src="imagenes/usuario.jpg" alt="Usuario">
+            <img src="imagenes/usuario.jpg">
             <figcaption>Usuario 1</figcaption>
         </figure>
     </header>
@@ -44,7 +44,7 @@
 
             <button id="agregar_producto">
                 <label for="text">Administrar Pagos</label>
-                <img src="imagenes/Tarjeta.jpg" id="imagen_tarjeta">
+                <img src="imagenes/Tarjeta.jpg" id="imagen_tarjeta" alt="Tarjeta">
             </button>
         </aside>
     <main>
@@ -54,7 +54,7 @@
                     <legend>Agregar Producto</legend>
                     
                     <label for="Codigo" class="label">Codigo*</label>
-                        <input type="text" name="Codigo" id="Codigo" class="input" maxlength="6" pattern="[0-7]{6}" title="Debe ingrsar solo 6 números" required>
+                        <input type="text" name="Codigo" id="Codigo" class="input" pattern="[0-7]{6}" title="Debe ingrsar solo 6 números" required>
                         <input type="button" value="Validar" >
                     <br><br>
 
@@ -77,11 +77,11 @@
                     <br><br>
                     
                     <label for="RUC Proveedor" class="label">RUC Proveedor*</label>
-                        <input type="text" name="RUC Proveedor" id="RUC Proveedor" placeholder="Solo numeros" class="input">
+                        <input type="tel" name="RUC Proveedor" id="RUC Proveedor" placeholder="Solo numeros" class="input">
                     <br><br>
                     
                     <label for="Precio" class="label">Precio*</label>
-                        <input type="number" name="Precio" id="Precio" class="input" min="10">
+                        <input type="number" name="Precio" id="Precio" class="input" step="0.01">
                     <br><br>
                     
                     <label for="Color_etiqueta" class="label">Color de etiqueta</label>
